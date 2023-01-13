@@ -13,9 +13,7 @@ The library has been tested on Windows.
 
 ### Install requirements for reproducing the experiments
 1. Download and extract the zip or clone [PCD](https://github.com/Brain-Modulation-Lab/pcd)
-2. Download and extract the zip or clone [BML](https://github.com/Brain-Modulation-Lab/bml)
-3. Copy the BML toolbox into the utility folder of PCD
-4. Run the example:
+2. Run the example:
 ```
 Example_run_pcd.m
 ```
