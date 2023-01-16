@@ -11,11 +11,14 @@ Victoria Peterson, Matteo Vissani, Shiyu Luo, Qinwan Rabbani, Nathan E. Crone, A
 This guidelines are based on Matlab 2021a.
 The library has been tested on Windows.
 
-### Install requirements for reproducing the experiments
+### Download and run the demos
 1. Download and extract the zip or clone [PCD](https://github.com/Brain-Modulation-Lab/pcd)
 2. Run the example:
 ```
 Example_run_pcd.m
+```
+```
+Example_comparison_PCD_CAR_ICA.m
 ```
 ##### And you are ready. Happy coding!
 
