@@ -13,8 +13,8 @@
 
 % REFERENCES
 % [1] Bush, Alan, et al. "Differentiation of speech-induced artifacts from 
-% physiological high gamma activity in intracranial recordings." 
-% bioRxiv (2021).
+% physiological high gamma activity in intracranial recordings." NeuroImage
+% 250 (2022): 118962.
 % [2] Nikulin, Vadim V., Guido Nolte, and Gabriel Curio.
 % "A novel method for reliable and fast extraction of neuronal EEG/MEG 
 % oscillations on the basis of spatio-spectral decomposition." NeuroImage 
@@ -24,7 +24,7 @@
 % multivariate neural recordings." NeuroImage 157 (2017): 331-340.
 %
 %author: vpeterson
-%last version: Jan 2022
+%last version: Jan 2023
 
 % see also apply_PCD.m, fit_PCD.m
 %--------------------------------------------------------------------------
