@@ -13,7 +13,7 @@ The library has been tested on Windows.
 
 ### Download and run the demos
 1. Download and extract the zip or clone [PCD](https://github.com/Brain-Modulation-Lab/pcd)
-2. Run the example:
+2. Run the examples:
 ```
 Example_run_pcd.m
 ```

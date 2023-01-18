@@ -6,10 +6,10 @@
 
 % REFERENCES
 % [1] Bush, Alan, et al. "Differentiation of speech-induced artifacts from 
-% physiological high gamma activity in intracranial recordings." 
-% bioRxiv (2021).
+% physiological high gamma activity in intracranial recordings." NeuroImage
+% 250 (2022): 118962.
 %author: vpeterson
-%last version: Jan 2022
+%last version: Jan 2023
 
 % see also apply_PCD.m, fit_PCD.m, fit_ICA.m
 %--------------------------------------------------------------------------
