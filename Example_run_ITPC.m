@@ -10,9 +10,10 @@
 
 % REFERENCES
 % [1] Cohen, M. X. Analyzing Neural Time Series Data: Theory and Practice. (MIT Press, 2014). 
-% [2] Bush, Alan, et al. "Differentiation of speech-induced artifacts from 
-% physiological high gamma activity in intracranial recordings." 
-% bioRxiv (2021).
+% [2] Bush A, Chrabaszcz A, Peterson V, Saravanan V, Dastolfo-Hromack C,
+% Lipski WJ, Richardson RM. Differentiation of speech-induced
+% artifacts from physiological high gamma activity in intracranial
+% recordings. Neuroimage. 2022 Apr 15;250:118962.
 
 %
 %author: mvissani
