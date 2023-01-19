@@ -23,5 +23,8 @@ Example_comparison_PCD_CAR_ICA.m
 ```
 Example_run_ITPC.m
 ```
+```
+Example_run_HybridSimulation.m
+```
 ##### And you are ready. Happy coding!
 
