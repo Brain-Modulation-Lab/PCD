@@ -5,7 +5,7 @@
 </p>
 
 You will find here all the codes and instructions needed to reproduce the experiments performed in "A supervised data-driven spatial filter denoising method for acoustic-induced artifacts in intracranial electrophysiological recordings ", by 
-Victoria Peterson, Matteo Vissani, Shiyu Luo, Qinwan Rabbani, Nathan E. Crone, Alan Bush, and R. Mark Richardson.
+Victoria Peterson, Matteo Vissani, Shiyu Luo, Qinwan Rabbani, Nathan E. Crone, Alan Bush, and R. Mark Richardson (pre-print [here](https://www.biorxiv.org/content/10.1101/2023.04.05.535577v1.full.pdf))
 
 ## Installation guidelines
 This guidelines are based on Matlab 2021a.
