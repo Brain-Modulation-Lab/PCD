@@ -1,11 +1,17 @@
 %% Run a demo for the simulation of the Realistic Scenario
 % Neural sources (D) [following [1]] and a speech-produced audio (A) [2] (in Data folder) are
 % mixed to create noisy neural signal (H = D*A)
+
+% You need to include the bml library in your path
 %
 % The function code_CUBN.c is a mex source code. You have to compile this routine in Matlab to generate the 
 % mex file (e.g.: code_CUBN.mexw64). Note that you have to include the functions ran1.c and gasdev.c in the 
 % compiling instruction in the Matlab workspace, in the following way: 
-% mex code_CUBN.c ran1.c gasdev.c 
+
+% Go in utilites/sim-toolkit/CUBN 
+% run mex code_CUBN.c ran1.c gasdev.c
+
+
 %
 % References:
 % [1] S.Cavallari, S. Panzeri and A.Mazzoni (2014) Comparison of the
@@ -30,6 +36,9 @@
 % include the folder (and subfolders) utilies in the path
 addpath(genpath(['.' filesep 'utilities' filesep]))
 
+% include the bml toolbox and run bml_defaults
+bml_defaults;
+
 % set random generator seed
 randn('state',42);
 
@@ -39,7 +48,7 @@ PATH_DATA = './Data';
 %% Step 1: Simulate the neural signals (H = D*A)
 
 % settings of simulation
-n_sim = 100; % number of trials
+n_sim = 3; % number of trials
 n_sources = 99; % number of sources
 n_channels = 60; % 100 number of channels
 

@@ -35,23 +35,28 @@ load('./Data/DataTrials.mat')
 % are learned, we can apply the model in a wider epoch. We follow this
 % procedure here.
 
-Xe = Data.X_tofit; %is an array of n_channels x n_sampling points from
+% Xe = Data.X_tofit; %is an array of n_channels x n_sampling points from
 % which the PCD will be learned
-ze = Data.z; %is the recorded audio, used to drive the estimatation of
+
+% ze = Data.z; %is the recorded audio, used to drive the estimatation of
 % the artifactual source. These two signals should have the same number of
 % data points
-X_toclean_e = Data.X_toclean; %data to be dennChansChansnoised. Here a wider extrated
+
+% X_toclean_e = Data.X_toclean; %data to be dennChansChansnoised. Here a wider extrated
 % epoch that contains Xe.
-F0 = Data.F0; % Annotation of F0. Here we have one annotation per produced
+
+% F0 = Data.F0; % Annotation of F0. Here we have one annotation per produced
 % syllable.
-sf = Data.sf; %sampling frequency. Here 1000 Hz.
-ch_names = Data.ch_names; %channel names. Here we have data recorded from
+
+% sf = Data.sf; %sampling frequency. Here 1000 Hz.
+
+% ch_names = Data.ch_names; %channel names. Here we have data recorded from
 %ECoG and DBS electrodes.
 
-nChans = numel(DataTrials{1,1}.ch_names); % number of channels (e.g., 2)
-nTrials = numel(DataTrials); % number of trials (e.g., 20)
 
 %% Step 1: Calculate ITPC before applying PCD
+nChans = numel(DataTrials{1,1}.ch_names); % number of channels (e.g., 2)
+nTrials = numel(DataTrials); % number of trials (e.g., 20)
 
 % extract ITPC
 CoH = nan(nTrials,nChans);
