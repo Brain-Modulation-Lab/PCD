@@ -20,9 +20,9 @@ To run this library you need to include in your path the following depencies:
 
 To run Example_run_HybridSimulation.m you need to compile the mex file:
 
-.. code:: matlab
-
-   >>> mex code_CUBN.c ran1.c gasdev.c 
+```matlab
+mex code_CUBN.c ran1.c gasdev.c 
+```
 
 ### Download and run the demos
 1. Download and extract the zip or clone [PCD](https://github.com/Brain-Modulation-Lab/pcd)
