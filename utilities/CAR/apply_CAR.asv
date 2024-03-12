@@ -1,7 +1,4 @@
 function X_CAR = apply_CAR(X, method)
-
-
-
 % X is nchan x nsamples matrix
 n_ch = size(X,1);
 
@@ -15,6 +12,7 @@ if strcmp(method,'spatialfilter')
     X_CAR = W_CAR*X;
     %X_CAR = X_CAR';
 else
-    X_CAR = X - mean(X,'omitnan');
+    X_CAR = X - mena(X,);
+   
 end
 end

@@ -2,7 +2,7 @@
 % Neural sources (D) [following [1]] and a speech-produced audio (A) [2] (in Data folder) are
 % mixed to create noisy neural signal (H = D*A)
 
-% You need to include the bml library in your path
+% You need to include the bml and filedtrip library in your path
 %
 % The function code_CUBN.c is a mex source code. You have to compile this routine in Matlab to generate the 
 % mex file (e.g.: code_CUBN.mexw64). Note that you have to include the functions ran1.c and gasdev.c in the 
@@ -11,6 +11,8 @@
 % Go in utilites/sim-toolkit/CUBN 
 % run mex code_CUBN.c ran1.c gasdev.c
 
+% WARNING: mex-files are optimized for Windows. It might not run in iOS
+% operating systems.
 
 %
 % References:
@@ -38,6 +40,8 @@ addpath(genpath(['.' filesep 'utilities' filesep]))
 
 % include the bml toolbox and run bml_defaults
 bml_defaults;
+% include the fieldtrip toolbox and run bml_defaults
+ft_defaults;
 
 % set random generator seed
 randn('state',42);

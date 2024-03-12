@@ -13,6 +13,10 @@
 
 % see also apply_PCD.m, fit_PCD.m, fit_ICA.m
 %--------------------------------------------------------------------------
+% add in your path the picard implementation for ICA
+% https://github.com/pierreablin/picard
+
+
 addpath(genpath('./utilities/'))
 filesep = '\';
 
@@ -28,18 +32,24 @@ load('./Data/Data.mat')
 % procedure here.
 
 
-Xe = Data.X_tofit; %is an array of n_channels x n_sampling points from 
+
+Xe = Data.X_tofit; %is an array of n_channels x n_sampling points from
 % which the PCD will be learned
-ze = Data.z; %is the recorded audio, used to drive the estimatation of 
+
+ze = Data.z; %is the recorded audio, used to drive the estimatation of
 % the artifactual source. These two signals should have the same number of
-% data points
-X_toclean_e = Data.X_toclean; %data to be denoised. Here a wider extrated
+% data point
+
+X_toclean_e = Data.X_toclean; %data to be dennChansChansnoised. Here a wider extrated
 % epoch that contains Xe.
+
 F0 = Data.F0; % Annotation of F0. Here we have one annotation per produced
 % syllable.
+
 sf = Data.sf; %sampling frequency. Here 1000 Hz.
-ch_names = Data.ch_names; %channel names. Here we have data recorded from 
-%ECoG and DBS electrodes. 
+
+% ch_names = Data.ch_names; %channel names. Here we have data recorded from
+%ECoG and DBS electrodes.
 %% RUN PCD
 
 % calculate the power spectrum of the audio (z)
@@ -126,7 +136,7 @@ X_denoised_CAR = apply_CAR(Xe, 'spatialfilter');
 %% RUN ICA
 pca_components = 0.99;
 [W_ica, A_ica, params, X_pca, X_ica] = fit_ICA(Xe, ze, 'pca_n_components',pca_components, 'verbose', 1);
-[score, idx] = select_ica_components(ze, X_ica,sf, fo_, 'False');
+[score, idx] = select_ica_components(ze, X_ica,sf, fo_, 'False',[]);
 n_comp ='diff';        
 [X_denoised_ICA, Proj_matrix_ica, idx_keep_ica] = apply_ICA(W_ica,A_ica,X_toclean_e,score, idx,n_comp, 1);
 %% Let's have a look at the estimated source in for ICA and CAR
