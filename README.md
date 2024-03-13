@@ -11,6 +11,19 @@ Victoria Peterson, Matteo Vissani, Shiyu Luo, Qinwan Rabbani, Nathan E. Crone, A
 This guidelines are based on Matlab 2021a.
 The library has been tested on Windows.
 
+## Requirements:
+To run this library you need to include in your path the following depencies:
+
+* [BML](https://github.com/Brain-Modulation-Lab/bml) toolbox
+* [Fieldtrip](https://www.fieldtriptoolbox.org/)
+* [Picard](https://github.com/pierreablin/picard)
+
+To run Example_run_HybridSimulation.m you need to compile the mex file:
+
+```matlab
+mex code_CUBN.c ran1.c gasdev.c 
+```
+
 ### Download and run the demos
 1. Download and extract the zip or clone [PCD](https://github.com/Brain-Modulation-Lab/pcd)
 2. Run the examples:
