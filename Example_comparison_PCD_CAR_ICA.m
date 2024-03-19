@@ -102,7 +102,7 @@ fl = round(fo_ - ceil(BWs/2));
 fh = round(fo_ + ceil(BWs/2));
 bands = [fl,fh; 4,240;  fl-1,fh+1];
 end
-%sometims estimated fo is greater than 240 hz, and thus we need 
+%sometimes estimated fo is greater than 240 hz, and thus we need 
 %to redefine the bands
 signal_band = bands(1,:); % signal bandpass band
 noise_bp_band = bands(2,:); % noise bandpass band

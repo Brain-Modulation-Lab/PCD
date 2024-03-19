@@ -1,4 +1,13 @@
 function [score, idx_] = select_ica_components(z, Xica, sf, fo_, naive, doplot, out_figures)
+% selects ICA components based on the PLV wrt to the audio signal z
+
+if nargin < 7
+  out_figures = [];
+end
+if nargin < 6
+   doplot = 0;
+end
+
 XCORR = [];
 PLV=[];
 bands= [50, 250];
